@@ -1,0 +1,44 @@
+{
+  "source": "google_images",
+  "name": "Google Images",
+  "sample": {
+    "query": "rooftop solar installation",
+    "num": 5
+  },
+  "inputs": "query; optional Google search parameters",
+  "outputs": "results[].images: image/source URLs and available dimensions; usage.credits",
+  "limits": "Does not download images or establish image reuse rights.",
+  "outputExample": {
+    "source": "google_images",
+    "status": "done",
+    "results": [
+      {
+        "searchParameters": {
+          "q": "tokyo skyline",
+          "gl": "us",
+          "hl": "en",
+          "type": "images",
+          "num": 100,
+          "page": 1,
+          "engine": "google"
+        },
+        "images": [
+          {
+            "title": "Tokyo Skyline: where to enjoy the best views - WarmCheapTrips",
+            "imageUrl": "https://warmcheaptrips.com/wp-content/uploads/2024/11/Tokyo-Skyline.jpg",
+            "imageWidth": 1945,
+            "imageHeight": 1459,
+            "thumbnailUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLQIAqps-rU9vbSrchB9MbLVMr9p7IvzeeCYqcN_hv3g&s=10",
+            "thumbnailWidth": 638,
+            "thumbnailHeight": 480
+          }
+        ]
+      }
+    ],
+    "usage": {
+      "credits": 0.02
+    }
+  },
+  "repository": "flashdata-google-images-action",
+  "action_name": "Google Images Inventory - FlashData"
+}
